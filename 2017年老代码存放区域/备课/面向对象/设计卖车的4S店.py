@@ -29,3 +29,14 @@ class BC(object):
         print('车在移动')
     def stop(self):
         print('停车')
+
+class CarStore(object):
+
+    def order(self,typeName):
+        # 根据用户的不同需要，生成不同的类型的车
+        if typeName == '宝马':
+            car = BMW()
+        elif typeName == '奔驰':
+            car = BC()
+        return car
+
