@@ -1,3 +1,5 @@
+# """设计一个卖车的4S店，该怎么做？"""
+# # 定义车类
 # class Car(object):
 #     # 定义车的方法
 #     def move(self):
@@ -14,9 +16,10 @@
 #         self.car.move()
 #         self.car.stop()
 
+#buy_car = CarStore()
+#buy_car.order()
+print('------------------------------------------------------------------------------------')
 
-# buy_car = CarStore()
-# buy_car.order()
 
 class BMW(object):
     def move(self):
@@ -40,3 +43,5 @@ class CarStore(object):
             car = BC()
         return car
 
+buy_car = CarStore()
+buy_car.order('宝马')
