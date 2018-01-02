@@ -39,6 +39,7 @@ class 零售店类(object):
     def 提车(self,typeName):
         if typeName == '索纳塔':
             car = 索纳塔车类()
+            print(id(car))
             return car
         elif typeName == '伊兰特':
             car = 伊兰特车类()
@@ -48,6 +49,7 @@ class 零售店类(object):
 用户到手的车钥匙 = 售车员.提车('索纳塔')
 用户到手的车钥匙.移动()
 用户到手的车钥匙.停止()
+print(id(用户到手的车钥匙))
 
 
         
