@@ -1,3 +1,7 @@
-import sendMsg
+# import sendMsg
 
-sendMsg.send()
+# sendMsg.send()
+
+from sendMsg import send
+
+send()
