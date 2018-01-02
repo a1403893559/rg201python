@@ -45,11 +45,16 @@
 # N = set(N)
 # print(N)
 
-n = [[x,y,z] for x in range(1,100,3) for y in range(x+1,x+2,2) for z in range(x+2,x+3,2)]
-print(n)
-#L = (1,2)
-#L = list(L)
-#print(L)
-#
-p = [(x,x+1,x+2) for x in range(1,100,3)]
-print(p)
+# n = [[x,y,z] for x in range(1,100,3) for y in range(x+1,x+2,2) for z in range(x+2,x+3,2)]
+# print(n)
+# #L = (1,2)
+# #L = list(L)
+# #print(L)
+# #
+# p = [(x,x+1,x+2) for x in range(1,100,3)]
+# print(p)
+# L = []
+# for i in range(1,5):
+#     L.append(i)
+L = [i for i in range(1,5) if i!=1]
+print(L)
