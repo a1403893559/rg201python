@@ -1,7 +1,9 @@
+__all__ = ['send']
 def send():
     print('发出消息')
 
-
+def send2():
+    print('发出消息')
 
 print('测试')
 

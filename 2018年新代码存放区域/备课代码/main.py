@@ -2,6 +2,6 @@
 
 # sendMsg.send()
 
-from sendMsg import send
+from sendMsg import *
 
-send()
+send2()
