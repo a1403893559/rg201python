@@ -29,6 +29,8 @@ hero_me = pygame.image.load('/home/wengwenyu/vscodeProject/rg201python/2018年�
 # 设置英雄的初始位置
 hero_rect = pygame.Rect(200,600,102,126)
 screen.blit(hero_me,hero_rect)
+pygame.display.update()
+
 
 # 新的代码  创建敌方飞机
 enemy1 = GameSprite('/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/images/enemy1.png')
@@ -71,9 +73,7 @@ while True:
     screen.blit(bg,(0,0))
     # 绘制英雄的坐标
     screen.blit(hero_me,hero_rect)
-    # update 和 draw方法
-    enemy_Group.update()
-    enemy_Group.draw(screen)
+   
     # 更新屏幕
     pygame.display.update()
     #print(hero_rect.x,hero_rect.y)
