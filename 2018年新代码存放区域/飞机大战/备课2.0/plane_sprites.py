@@ -22,7 +22,7 @@ class GameSprite(pygame.sprite.Sprite):
     def image_names(prefix, count):
         names = []
         for i in range(1, count + 1):
-            names.append("./images/" + prefix + str(i) + ".png")
+            names.append("/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课2.0/images/" + prefix + str(i) + ".png")
 
         return names
 
@@ -31,7 +31,7 @@ class Background(GameSprite):
     """背景精灵"""
 
     def __init__(self, is_alt=False):
-        super().__init__("./images/background.png")
+        super().__init__("/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课2.0/images/background.png")
 
         if is_alt:
             self.rect.bottom = 0
@@ -161,7 +161,7 @@ class Bullet(GameSprite):
     """子弹精灵"""
 
     def __init__(self):
-        image_name = "./images/bullet1.png"
+        image_name = "/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课2.0/images/bullet1.png"
         super().__init__(image_name, -2)
 
     def update(self, *args):
@@ -176,7 +176,7 @@ class Enemy(PlaneSprite):
     """敌机精灵"""
 
     def __init__(self):
-        image_names = ["./images/enemy1.png"]
+        image_names = ["/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课2.0/images/enemy1.png"]
         destroy_names = GameSprite.image_names("enemy1_down", 4)
         super().__init__(image_names, destroy_names, 2, 1)
 
