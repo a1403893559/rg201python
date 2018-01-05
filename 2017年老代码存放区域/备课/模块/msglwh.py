@@ -12,9 +12,7 @@ def love1():
 def green1():
     print('你的帽子是绿色的')
 
-
-
-
+print(__name__)
 
 if __name__ == '__main__':
     pass

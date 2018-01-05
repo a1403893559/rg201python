@@ -5,4 +5,4 @@ def green():
     print('绿色')
 
 
-
+print(__name__)
