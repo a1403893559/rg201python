@@ -14,6 +14,8 @@ class PlaneGame(object):
         self.clock = pygame.time.Clock()
         # 3 调用私有方法 里面的创建精灵和精灵组
         self.__create_sprites()
+        # 4 设置定时器事件 - 每秒创建一架敌机
+        pygame.time.set_timer(CREATE_ENEMY_EVENT,1000)
 
     def start_game(self):
         print('开始游戏')
@@ -38,7 +40,7 @@ class PlaneGame(object):
         bg2 = Backgroup('/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课/images/background.png')
         bg2.rect.y = -bg2.rect.height
         self.back_group = pygame.sprite.Group(bg1,bg2)
-        # 2、敌机精灵组
+        # 2、敌机精灵组 self.enemy_group = []
         self.enemy_group = pygame.sprite.Group()
         # 3、英雄精灵组
         self.hero_group = pygame.sprite.Group()
@@ -52,6 +54,9 @@ class PlaneGame(object):
             if event.type == pygame.QUIT:
                 # 调用静态私有方法
                 PlaneGame.__game_over()
+            elif event.type == CREATE_ENEMY_EVENT:
+                enemy = Enemy()
+                self.enemy_group.add(enemy)
 
 
 
