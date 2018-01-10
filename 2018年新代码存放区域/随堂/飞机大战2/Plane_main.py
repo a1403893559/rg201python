@@ -16,6 +16,8 @@ class PlaneGame(object):
         self.__create_sprites()
         # 4 设置定时器事件 - 每秒创建一架敌机
         pygame.time.set_timer(CREATE_ENEMY_EVENT,1000)
+        # 5 每隔 0.5秒发射一个豆豆
+        pygame.time.set_timer(HERO_FIRE_EVENT,500)
 
     def start_game(self):
         print('开始游戏')
@@ -43,7 +45,8 @@ class PlaneGame(object):
         # 2、敌机精灵组 self.enemy_group = []
         self.enemy_group = pygame.sprite.Group()
         # 3、英雄精灵组
-        self.hero_group = pygame.sprite.Group()
+        self.hero = Hero()
+        self.hero_group = pygame.sprite.Group(self.hero)
 
     def __event_handler(self):
         """事件监听的方法"""
@@ -57,7 +60,27 @@ class PlaneGame(object):
             elif event.type == CREATE_ENEMY_EVENT:
                 enemy = Enemy()
                 self.enemy_group.add(enemy)
+            elif event.type == HERO_FIRE_EVENT:
+                self.hero.fire()
+            #elif event.type == pygame.KEYDOWN and event.key == pygame.K_RIGHT:
+            #    print('向右边移动')
 
+            # 另外一个方案 返回所有按键的元组 如果某个按键按下 对应的值会是1
+            key_pressed = pygame.key.get_pressed()
+
+            if key_pressed[pygame.K_RIGHT]:
+                print('向右边移动')
+                self.hero.speed = 2        
+            elif key_pressed[pygame.K_LEFT]:
+                self.hero.speed = -2
+                print('向左边移动')
+            else:
+                self.hero.speed = 0
+
+            
+
+
+            
 
 
     def __check_collide(self):
@@ -66,12 +89,13 @@ class PlaneGame(object):
     
     def __update_sprites(self):
         """更新精灵组"""
-        for group in [self.back_group,self.enemy_group,self.hero_group]:
+        for group in [self.back_group,self.enemy_group,self.hero_group,self.hero.bullets]:
             # 更新精灵组里面所有精灵的位置
             group.update()
             # 绘制到屏幕上
             group.draw(self.screen)
-
+        
+        
 
     @staticmethod
     def __game_over():

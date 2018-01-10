@@ -5,6 +5,10 @@ import pygame
 SCREEN_RECT = pygame.Rect(0,0,480,700)
 # 敌机的定时器事件常量
 CREATE_ENEMY_EVENT = pygame.USEREVENT
+# 定义一个子弹的常量
+HERO_FIRE_EVENT = pygame.USEREVENT + 1
+
+
 
 class GameSprite(pygame.sprite.Sprite):
     """游戏精灵的基类"""
@@ -71,5 +75,65 @@ class Enemy(GameSprite):
     
     def __del__(self):
         print('敌机挂掉了%s'%self.rect)
+
+class Hero(GameSprite):
+    """英雄的精灵"""
+
+
+    def __init__(self):
+
+        super().__init__('/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课/images/me1.png',0)
+
+        # 给英雄设置一个初始位置
+        self.rect.centerx = SCREEN_RECT.centerx
+        self.rect.bottom = SCREEN_RECT.bottom - 120
+        
+        # 创建一个子弹的精灵
+        self.bullets = pygame.sprite.Group()
+
+    def update(self):
+        
+        #super().update()
+        # 飞机水平移动
+        self.rect.x += self.speed 
+        
+        # 判断飞机屏幕边界
+        if self.rect.left < 0:
+            self.rect.left = 0
+
+        if self.rect.right > SCREEN_RECT.right:
+            self.rect.right = SCREEN_RECT.right
+    
+    def fire(self):
+        print('发射子弹')
+        
+        for i in (1,2,3):
+            # 1 创建子弹
+            bullet = Bullet()
+            # 2 设置子弹的为止
+            bullet.rect.bottom = self.rect.y - 20*i
+            bullet.rect.centerx = self.rect.centerx
+            # 3 将子弹添加到精灵组
+            self.bullets.add(bullet)
+
+
+
+class Bullet(GameSprite):
+    """子弹精灵类"""
+
+
+    def __init__(self):
+        
+        # 1、调用父类的方法
+        super().__init__('/home/wengwenyu/vscodeProject/rg201python/2018年新代码存放区域/飞机大战/备课/images/bullet1.png',-2)
+
+    def update(self):
+        
+        super().update()
+
+        # 判断子弹是否超出屏幕 如果是 我们要让子弹从精灵组删除
+        if self.rect.bottom < 0:
+            self.kill()
+
 
 

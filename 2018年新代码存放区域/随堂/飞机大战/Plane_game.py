@@ -11,7 +11,11 @@ class PlaneGame(object):
         self.clock = pygame.time.Clock()
         # 3、调用私有方法
         self.__creat_sprites()
-        
+        # 4 设置定时器 每秒调用一次这个事件
+        pygame.time.set_timer(CREATE_ENEMY_EVENT,1000)
+        # 5 每隔 0.5 秒发射一次子弹
+        pygame.time.set_timer(HERO_FIRE_EVENT,500)
+
     def start_game(self):
         print('开始游戏啦')
         while True:
@@ -40,13 +44,38 @@ class PlaneGame(object):
         # 2、敌机组
         self.enemy_group = pygame.sprite.Group()
         # 3、英雄组
-        self.hero_group = pygame.sprite.Group()
+        self.hero = Hero()
+        self.hero_group = pygame.sprite.Group(self.hero)
+        # 创建子弹的精灵
+        self.bullets = pygame.sprite.Group()
+
+
 
     def __event_hander(self):
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 PlaneGame.__game_over()
-        pass
+            elif event.type == CREATE_ENEMY_EVENT:
+                self.enemy_group.add(Enemy())
+            elif event.type == HERO_FIRE_EVENT:
+                self.hero.fire()
+
+        
+
+            
+        # 获取用户按键
+        keys_pressed = pygame.key.get_pressed()
+
+        if keys_pressed[pygame.K_RIGHT]:
+            self.hero.speed = 2
+        elif keys_pressed[pygame.K_LEFT]:
+            self.hero.speed = -2
+        else:
+            self.hero.speed = 0
+
+
+
     def __check_collide(self):
         """碰撞检测"""
         pass
@@ -56,6 +85,9 @@ class PlaneGame(object):
 
             group.update()
             group.draw(self.screen)
+        
+        self.hero.bullets.update()
+        self.hero.bullets.draw(self.screen)
 
     @staticmethod
     def __game_over():
