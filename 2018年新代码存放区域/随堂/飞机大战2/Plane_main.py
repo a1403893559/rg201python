@@ -85,7 +85,20 @@ class PlaneGame(object):
 
     def __check_collide(self):
         """碰撞检测的方法"""
-        pass
+        # 1 子弹摧毁飞机
+        pygame.sprite.groupcollide(self.hero.bullets,self.enemy_group,False,False)
+
+        # 2 英雄撞到敌机
+        enemies = pygame.sprite.spritecollide(self.hero,self.enemy_group,True)
+        
+        # 判断列表是否有内容
+        if len(enemies)>0:
+
+            #让英雄牺牲
+            self.hero.kill()
+
+            # 结束游戏
+            PlaneGame.__game_over()
     
     def __update_sprites(self):
         """更新精灵组"""
