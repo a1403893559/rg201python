@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-relative</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.block{
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			border: 2px solid black;
+			text-align: center;
+			float: left;
+		}
+		.block:nth-child(2){
+			position: relative;
+			border-color: red;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="block">A</div>
+	<div class="block">B</div>
+</body>
+</html>

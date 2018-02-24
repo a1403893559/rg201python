@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>float副作用</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.per{
+			width: 500px;
+			height: auto;
+			border: 1px solid #000;
+		}
+		.test{
+			width: 80px;
+			height: 30px;
+			background: red;
+			border:1px white solid;
+
+			float: left;
+		}
+		.bro{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="per">
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+	</div>
+	<!-- 添加了一个父元素的兄弟元素 -->
+	<div class="bro">
+		
+	</div>
+</body>
+</html>

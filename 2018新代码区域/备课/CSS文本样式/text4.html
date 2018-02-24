@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文本样式</title>
+	<style type="text/css">
+		p{
+			background: #ececec;
+			height: 80px;
+			font-size: 20px;
+		}
+		span{
+			color: red;
+			font-size: 14px;
+		}
+		.sub{
+			vertical-align: sub;
+		}
+		.super{
+			vertical-align: super;
+		}
+		.baseline{vertical-align: baseline;}
+		.top{vertical-align: top;}
+		.text-top{vertical-align: text-top;}
+		.middle{vertical-align: middle;}
+		.text-bottom{vertical-align: text-bottom;}
+		.bottom{vertical-align: bottom;}
+
+		td{
+			height: 80px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<b>-----sub和super值----</b>
+	<p>CSS层叠样式表<span class="sub">sub</span></p>
+	<p class="sub">CSS层叠样式表<span>sub</span></p>
+	<p>CSS层叠样式表<span class="super">super</span></p>
+	<hr>
+	<b>----baseline,top,text-top,middle,bottom,text-bottom值----</b>
+	<p>
+		CSS层叠样式表
+		<span>(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="baseline">(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="top">(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="text-top">(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="middle">(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="text-bottom">(Cascading Style Sheets)</span>
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="bottom">(Cascading Style Sheets)</span>
+	</p>
+
+
+	<b>----长度和百分比的值----</b>
+	<P>
+		CSS层叠样式表
+		<!-- 上移 15px  下移-15px -->
+		<span style="vertical-align: 15px;">长度值</span>
+	</P>
+	<p>
+		CSS层叠样式表
+		<!-- 上移 100% 下移-100% -->
+		<span style="vertical-align: 100%">百分比</span>
+	</p>
+
+	<b>---应用于单元格元素---</b>
+	<table border="1px" class="one" cellpadding="0">
+		<tr>
+			<td class="top"><span>top</span></td>
+			<td class="middle"><span>middle</span></td>
+			<td class="bottom"><span>bottom</span></td>
+		</tr>
+	</table>
+</body>
+</html>
