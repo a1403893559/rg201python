@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超链接选择器</title>
+	<style type="text/css">
+		a{
+			/*去掉超级链接默认样式中的下划线*/
+			text-decoration: none;
+			font-size: 60px;
+		}
+		/*定义a元素未访问时的样式*/
+		a:link{
+			color: red;
+		}
+		/*定义a元素访问后的样式*/
+		a:visited{
+			color: green;
+		}
+		/*定义鼠标鼠标经过a元素时的样式*/
+		a:hover{
+			color: purple;
+		}
+		/*定义鼠标点击激活时的样式*/
+		a:active{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" target="_blank">百度一下,你就知道</a>
+</body>
+</html>
