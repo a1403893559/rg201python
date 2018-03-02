@@ -25,10 +25,20 @@ class House:
         self.item_list = []
 
     def __str__(self):
-        return ("户型：%s\n总面积：%.2f[剩余：%.2f]\n家具：%s"%(self.house_type,self.area,self.free_area,self.item_list))
+        return ("户型：%s\n总面积：%.2f[剩余：%.2f]\n家具：%s"
+                %(self.house_type,self.area,
+                  self.free_area,self.item_list))
 
     def add_item(self,item):
         print("要添加%s"%item)
+        # 1.判断家具面积是否大于剩余面积
+        if item.area > self.free_area:
+            print("%s 的面积太大，不能添加到房子中"%item.name)
+            return
+        # 2.将家具的名称追加到名称列表
+        self.item_list.append(item.name)
+        # 3.计算剩余面积
+        self.free_area -= item.area
 
 # 1.创建家具
 bed = HouseItem("席梦思", 4)
