@@ -20,14 +20,35 @@
     <SUITE FILE_PATH="coverage/PycharmProjects$bc_01_.coverage" NAME="bc_01_第一个面向对象 Coverage Results" MODIFIED="1519960039557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/面向对象基础" />
     <SUITE FILE_PATH="coverage/PycharmProjects$bc_06___del__.coverage" NAME="bc_06___del__方法 Coverage Results" MODIFIED="1519974132586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/面向对象基础" />
     <SUITE FILE_PATH="coverage/PycharmProjects$bc_07__str__.coverage" NAME="bc_07__str__方法 Coverage Results" MODIFIED="1519975357463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/面向对象基础" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$bc_11_3.coverage" NAME="bc_11_案例3 Coverage Results" MODIFIED="1519981038624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/面向对象基础" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bc_08_案例.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bc_08_案例.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/面向对象基础/bc_08_案例.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-31">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="319">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bc_11_案例3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/面向对象基础/bc_11_案例3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bc_12_案例4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/面向对象基础/bc_12_案例4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -57,6 +78,8 @@
         <option value="$PROJECT_DIR$/面向对象基础/bc_03_设置属性对象.py" />
         <option value="$PROJECT_DIR$/面向对象基础/bc_02_面向对象汤姆猫.py" />
         <option value="$PROJECT_DIR$/面向对象基础/bc_01_第一个面向对象.py" />
+        <option value="$PROJECT_DIR$/面向对象基础/bc_11_案例3.py" />
+        <option value="$PROJECT_DIR$/面向对象基础/bc_12_案例4.py" />
       </list>
     </option>
   </component>
@@ -144,25 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bc_10_案例2_2">
-    <configuration name="bc_06___del__方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/面向对象基础" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PycharmProjects" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面向对象基础/bc_06___del__方法.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.bc_11_案例3">
     <configuration name="bc_07__str__方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,20 +240,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="bc_11_案例3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/面向对象基础" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PycharmProjects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面向对象基础/bc_11_案例3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.bc_06___del__方法" />
-      <item index="1" class="java.lang.String" itemvalue="Python.bc_07__str__方法" />
-      <item index="2" class="java.lang.String" itemvalue="Python.bc_08_案例" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bc_09_案例2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.bc_10_案例2_2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.bc_07__str__方法" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bc_08_案例" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bc_09_案例2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bc_10_案例2_2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.bc_11_案例3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.bc_10_案例2_2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bc_09_案例2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bc_08_案例" />
-        <item index="3" class="java.lang.String" itemvalue="Python.bc_07__str__方法" />
-        <item index="4" class="java.lang.String" itemvalue="Python.bc_06___del__方法" />
+        <item index="0" class="java.lang.String" itemvalue="Python.bc_11_案例3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bc_10_案例2_2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bc_09_案例2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.bc_08_案例" />
+        <item index="4" class="java.lang.String" itemvalue="Python.bc_07__str__方法" />
       </list>
     </recent_temporary>
   </component>
@@ -392,8 +415,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面向对象基础/bc_08_案例.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="319">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象基础/bc_11_案例3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象基础/bc_12_案例4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding />
         </state>
       </provider>
