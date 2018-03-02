@@ -1,6 +1,7 @@
 class Person:
     """人类"""
-    def __init__(self,name,weight):
+
+    def __init__(self, name, weight):
         # slef.属性 = 形参
         self.name = name
         self.weight = weight
@@ -16,7 +17,7 @@ class Person:
 
     def eat(self):
         """吃东西"""
-        print("%s 是吃货，吃完这顿在减肥"%self.name)
+        print("%s 是吃货，吃完这顿在减肥" % self.name)
         self.weight += 1
 
 

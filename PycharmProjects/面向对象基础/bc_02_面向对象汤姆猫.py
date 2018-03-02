@@ -5,6 +5,7 @@ class Cat:
     def drink(self):
         print("小猫要喝水")
 
+
 # 创建猫对象
 tom = Cat()
 tom.eat()
