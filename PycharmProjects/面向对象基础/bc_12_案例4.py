@@ -45,3 +45,6 @@ class Soldier:
 ak47 = Gun("ak47")
 ak47.add_bullet(50)
 ak47.shoot()
+
+
+
