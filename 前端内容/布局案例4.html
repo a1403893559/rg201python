@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻列表</title>
+	<style type="text/css">
+		.news_list_con{
+			width: 600px;
+			height: 290px;
+			border: 1px solid #ddd;
+			margin: 50px auto 0;
+
+		}
+		.news_list_con h3{
+			height: 50px;
+			width: 560px;
+			border-bottom: 1px solid #ddd;
+			/*去掉h3默认的margin margin上下0 左右auto就会居中*/
+			margin: 0px auto 0px;
+		}
+
+		.news_list_con h3 span{
+			display: inline-block;
+			height: 50px;
+			border-bottom: 2px solid red;
+			/*18表示字体像素 50px表示行高 字体为雅黑 这是简写*/
+			font: 18px/50px  "Microsoft Yahei";
+			color: #000;
+			padding: 0 15px;
+		}
+		.news_list_con ul{
+			list-style: none;
+			padding: 0px;
+			width: 560px;
+			height: 238px;
+			/*相对于父级居中*/
+			margin: 0 auto;
+		}
+		.news_list_con ul li{
+			height: 38px;
+			border-bottom:1px solid #ddd; 
+		}
+		.news_list_con ul li a{
+			float: left;
+			height: 38px;
+			/*line-height: 38px;*/
+			/*14px/38px 上面一句line-height就省略了*/
+			font: 14px/38px "Microsoft Yahei";
+			/*下划线和颜色*/
+			text-decoration: none;
+			color: #000;
+		}
+		.news_list_con ul li span{
+			float: right;
+			height: 38px;
+			line-height: 38px;
+		}
+		.news_list_con ul a:before{
+			/*添加内容*/
+			content: ". "
+		}
+		.news_list_con ul a:hover{
+			color: red;
+		}
+		#last{
+			border-bottom: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="news_list_con">
+		<h3><span>新闻列表</span></h3>
+		<ul>
+			<li><a href="#">特征布局：新闻列表所需知识：盒子模型，浮动</a><span>2018-2-19</span></li>
+			<li><a href="#">特征布局：新闻列表所需知识：盒子模型，浮动</a><span>2017-5-55</span></li>
+			<li><a href="#">特征布局：新闻列表所需知识：盒子模型，浮动</a><span>2017-5-55</span></li>
+			<li><a href="#">特征布局：新闻列表所需知识：盒子模型，浮动</a><span>2017-5-55</span></li>
+			<li><a href="#">特征布局：新闻列表所需知识：盒子模型，浮动</a><span>2017-5-55</span></li>
+			<li id="last"><a href="#">习大大过年</a><span>2017-5-55</span></li>
+		</ul>
+	</div>
+</body>
+</html>
