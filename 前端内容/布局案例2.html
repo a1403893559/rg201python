@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布局案例</title>
+	<style type="text/css">
+		.menu{
+			width: 850px;
+			height: 40px;
+			border: 1px solid #000;
+			margin: 50px auto 0;
+			padding: 0;
+			list-style: none;
+			/*居中*/
+			text-align: center;
+			line-height: 40px;
+			/*避免子类继承*/
+			font-size: 0;
+		}
+		.menu li{
+			/*设置成行内块元素 就会排成一行*/
+			display: inline-block;
+			font-size: 24px;
+			
+		}
+		.menu .line{
+			color: #333;
+			/*撑开*/
+			margin: 0 20px;
+		}
+		.menu li a{
+			/*因为我们设置的a标签上的颜色*/
+			color: #333;
+			text-decoration: none;
+		}
+		/*给每个a标签一个hover事件*/
+		.menu li a:hover{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="">首 页</a></li>
+		<li class="line">|</li>
+		<li><a href="">专  辑</a></li>
+		<li class="line">|</li>
+		<li><a href="">尤  物</a></li>
+		<li class="line">|</li>
+		<li><a href="">花  絮</a></li>
+		<li class="line">|</li>
+		<li><a href="">排 行 版</a></li>
+		<li class="line">|</li>
+		<li><a href="">加入VIP</a></li>
+		<li class="line">|</li>
+		<li><a href="">APP下载</a></li>
+	</ul>
+</body>
+</html>
