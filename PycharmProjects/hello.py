@@ -1,25 +1,14 @@
-class Person:
-    def __init__(self):
-        # 体重 weight:体重
-        self.weight = 240
-        # 名字
-        self.name = "段金松"
+def print_passwd():
+    # 1 用户输入密码
+    pwd = input("请输入密码")
 
-    # 吃东西
-    def eat(self):
-        self.weight += 1
-        print(self.name + "吃完以后：" + str(self.weight))
+    # 2 对输入的密码进行判断
+    if len(pwd) > 8:
+        print("密码正确")
+    else:
+        print("密码错误")
+        ex = Exception("密码少于8位")
+        raise ex
 
-    # 跑步
-    def run(self):
-        self.weight -= 0.5
-        print(self.name+"跑完以后:"+str(self.weight))
 
-kj = Person()
-kj.name = "康俊"
-kj.weight = 100
-kj.eat()
-kj.eat()
-kj.run()
-kj.run()
-
+print_passwd()

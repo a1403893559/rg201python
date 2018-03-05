@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#first{
+			width: 100px;
+			height: 2100px;
+			border: 2px red solid;
+
+		}
+		#second{
+			/*设置元素的固定位置*/
+			position: fixed;
+			top: 30px;
+			right: 10px;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="first">无定位的元素</div>
+	<div id="second">固定定位的元素</div>
+</body>
+</html>
