@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.showname = function() {
+            alert("我的名字叫" + this.name);
+        }
+        this.showage = function() {
+            alert("我今年" + this.age + "岁");
+        }
+        this.showjob = function() {
+            alert('我的工作是' + this.job);
+        }
+
+    }
+    var tom = new Person('tom',18,'程序员');
+    var jack = new Person('jack',19,'销售');
+    alert(tom.showjob==jack.showjob);
+    </script>
+</body>
+
+</html>

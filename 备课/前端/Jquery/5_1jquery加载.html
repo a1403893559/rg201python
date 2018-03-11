@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery加载</title>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js"></script>
+	<script type="text/javascript">
+		// $(document).ready(function () {
+		// 	var a = document.getElementsByClassName('test')[0];
+		// 	a.style.background =  'red';
+		// })
+		$(function () {
+			var a = document.getElementById('test');
+			a.style.background = 'blue'; 
+		})
+	</script>
+	<style type="text/css">
+		div{
+			width: 50px;
+			height: 50px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="test"></div>
+</body>
+</html>

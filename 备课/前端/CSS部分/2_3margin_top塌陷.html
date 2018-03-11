@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin-top塌陷</title>
+    <style type="text/css">
+    .father {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    .son {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin-top: 50px;
+    }
+
+    .clearfix:before {
+        content: '';
+        display: table;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="father clearfix">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

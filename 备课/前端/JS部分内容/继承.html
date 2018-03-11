@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js继承</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fclass (name,age) {
+			this.name = name;
+			this.age = age;
+		}
+		fclass.prototype.showname = function(){
+			alert(this.name);
+		}
+		fclass.prototype.showage = function(){
+			alert(this.age);
+		};
+		function sclass (name,age,job) {
+			fclass.call(this, name,age);
+			this.job = job;
+		}
+		sclass.prototype.showjob = function(){
+			alert(this.job);
+		};
+		var tom = new sclass('tom',19,'全站工程师');
+		tom.showname();
+		tom.showage();
+		tom.showjob();
+	</script>
+</body>
+</html>
