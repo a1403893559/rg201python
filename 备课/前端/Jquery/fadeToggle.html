@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淡出</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('button').click(function () {
+				$('#img1').fadeToggle();
+				$('#img2').fadeToggle("show");
+				$('#img3').fadeToggle(3000);
+			})
+		})
+	</script>
+</head>
+<body>
+	<button>淡出</button>
+	<img id="img1" src="尤果网1.jpg" alt="" width="100px" height="200px">
+	<img id='img2' src="尤果网2.jpg" alt="" width="100px" height="200px">
+	<img id='img3' src="尤果网3.jpg" alt="" width="100px" height="200px">
+	
+</body>
+</html>
